@@ -4,10 +4,19 @@ package classpart;
 public class StudentTest {
 	public static void main(String [] ar) {
 		
-		Student student = new Student();
-		student.studentName = "호일";
-		student.address = "서울";
+		Student studentHo = new Student("호일");
+//		studentHo.studentName = "호일";
+		studentHo.address = "서울";
 		
-		student.showStudentInfo();
+		studentHo.showStudentInfo();
+		
+		Student studentKim = new Student(100,"김이");
+//		studentKim.studentName ="김이";
+//		studentKim.address = "부산";
+		
+		studentKim.showStudentInfo();
+		
+//		System.out.println(studentHo);
+//		System.out.println(studentKim);
 	}
 }
